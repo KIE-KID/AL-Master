@@ -9,3 +9,4 @@ for i in coin:
     n %= i # 해당 동전으로 나눈 나머지
 
 print(count) # 동전 개수
+
