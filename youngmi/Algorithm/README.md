@@ -22,3 +22,6 @@ ex) 가장 큰 순서대로, 가장 작은 순서대로 등,,,
 - 큰 수의 법칙
 - 숫자 카드 게임
 - 1이 될 때 까지
+
+
+[코드업 문제집](https://www.codeup.kr/problemsetsol.php?psid=1) 
