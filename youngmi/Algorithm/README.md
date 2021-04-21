@@ -25,4 +25,5 @@ ex) 가장 큰 순서대로, 가장 작은 순서대로 등,,,
 
 <br>
 
-[코드업 문제집](https://www.codeup.kr/problemsetsol.php?psid=1) 
+[코드업 그리디 문제집](https://www.codeup.kr/problemsetsol.php?psid=1) 
+[백준 그리디 문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=33)
