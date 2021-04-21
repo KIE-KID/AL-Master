@@ -1,4 +1,3 @@
-k
 
 n = int(input())# 토핑의 종류 수 n
 a, b = map(int, input().split())# 도우의 가격 a, 토핑의 가격 b
