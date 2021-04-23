@@ -85,3 +85,8 @@ array = [[0] * m for _ in range(n)]
 
 
 
+
+int형 리스트 join
+```python
+' '.join(map(str,변수명))
+```
