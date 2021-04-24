@@ -48,7 +48,7 @@
 
 ## 2.Stack
 <p align="center">
-<img src="https://user-images.githubusercontent.com/53163222/115954760-b6910200-a52d-11eb-8222-ad612c2ded7e.png">
+<img width="50%" src="https://user-images.githubusercontent.com/53163222/115954760-b6910200-a52d-11eb-8222-ad612c2ded7e.png">
 </p>
 차곡차곡 쌓아 올린 형태의 자료구조
 
