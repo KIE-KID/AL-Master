@@ -80,6 +80,10 @@ stack overflow: 스택이 넘치는 경우
 수식의 괄호 검사 (연산자 우선순위 표현을 위한 괄호 검사)
 
 ## 3. Queue
+<p align="center">
+<img width="50%" src="https://user-images.githubusercontent.com/53163222/115955246-65ced880-a530-11eb-9a8b-4458a07c2d2a.png ">
+</p>
+
 ### 특징
 선입선출(FIFO, First-in First-out)
 ### 시간 복잡도
