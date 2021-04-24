@@ -47,6 +47,9 @@
 
 
 ## 2.Stack
+<p align="center">
+<img src="https://user-images.githubusercontent.com/53163222/115954760-b6910200-a52d-11eb-8222-ad612c2ded7e.png">
+</p>
 차곡차곡 쌓아 올린 형태의 자료구조
 
 ### 특징
@@ -83,7 +86,7 @@ stack overflow: 스택이 넘치는 경우
 - 삽입 : O(1)
 - 삭제 : O(1)
 - 탐색 : O(N)
-![image-20210424184707342](C:\Users\s_py9\AppData\Roaming\Typora\typora-user-images\image-20210424184707342.png)
+
 ### 장점
 ### 단점
 ### 사용
