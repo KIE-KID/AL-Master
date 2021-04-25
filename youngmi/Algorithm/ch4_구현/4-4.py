@@ -71,5 +71,3 @@ while True:
          break
 
 print(count)
-
-directions[direction][0]
