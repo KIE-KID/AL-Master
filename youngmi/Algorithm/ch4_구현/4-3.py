@@ -11,8 +11,22 @@
 
 왕실의 정원에서 행의 위치는 1~8, 열의 위치는 a~h
 
-
-
 아이디어
-
+1.입력으로 받은 좌표를 분리해서 위치를 파악
+2. 모든 이동 경로를 배열에 저장
+3. for문으로 이동 가능한지 확인
 '''
+
+n = input() # 현재 나이트의 좌표 입력
+step = [(-2,-1),(2,-1),(-2,1),(2,1),
+        (-1,-2),(-1,2),(1,-2),(1,2)]
+
+column = int(ord(n[0])) - int(ord('a')) + 1
+row = int(n[1])
+count = 0
+for i in step:
+    if column + i[0] > 0 and column + i[0] < 9 :
+        if row + i[1] > 0 and row + i[1] < 9 :
+            count += 1
+
+print(count)
