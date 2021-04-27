@@ -86,6 +86,8 @@ stack overflow: 스택이 넘치는 경우
 
 ### 특징
 선입선출(FIFO, First-in First-out)
+rear, front가 존재
+
 ### 시간 복잡도
 - 삽입 : O(1)
 - 삭제 : O(1)
