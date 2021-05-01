@@ -139,13 +139,11 @@
 
 # ✨ 자료구조
 
-- Array
+- Array / Linked list
 
-- Stack / Queue
+- Stack / Queue / Deque 
 
-- Deque / Priority Queue
-
-- Linked list
+- Priority Queue / Heap
 
 - HashSet / HashMap / HashTable / Dictionary
 
@@ -165,9 +163,7 @@
   - Red-Black Tree
   - B tree
   - B + tree
-
-- Heap
-
+    
 - Trie
 
 - Graph
