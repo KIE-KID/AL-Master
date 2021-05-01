@@ -108,6 +108,12 @@ rear, front가 존재
 캐시(Cache) 구현
 
 
-## 4. Deque
+## 3-1. Deque
+double-ended queue 의 줄임말로, 앞과 뒤에서 즉, 양방햐에서 데이터를 처리할 수 있는 queue형 자료구조를 의미한다.
+![img.png](img.png)
 
-## 5. Priority Q
+python의 collections에서 deque를 제공하고 있는데, 여기서 deque는 list와 일부 유사하다.
+자세한 메소드 활용 코드는 [여기](python/deque.py)에서 확인할 수 있다.
+deque의 전체 메소드는 [여기](docs.python.org)에서 확인할 수 있다.
+
+## 3-2. Priority Queue
