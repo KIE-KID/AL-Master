@@ -108,7 +108,7 @@ rear, front가 존재
 캐시(Cache) 구현
 
 
-## 3-1. Deque
+## 3-1. Deque (데크)
 double-ended queue 의 줄임말로, 앞과 뒤에서 즉, 양방햐에서 데이터를 처리할 수 있는 queue형 자료구조를 의미한다.
 ![img.png](img.png)
 
@@ -116,4 +116,9 @@ python의 collections에서 deque를 제공하고 있는데, 여기서 deque는 
 자세한 메소드 활용 코드는 [여기](python/deque.py)에서 확인할 수 있다.
 deque의 전체 메소드는 [여기](docs.python.org)에서 확인할 수 있다.
 
-## 3-2. Priority Queue
+## 3-2. Priority Queue (우선순위 큐)
+일반적으로 선입선출(FIFO)의 구조인 큐와 달리 들어간 순서에 상관없이 우선순위가 높은 데이터가 큐에서 먼저 나오는 자료구조를 말한다.
+힙(heap)이라는 자료구조로 구현할 수 있다.
+
+Q. 왜 배열이나 연결리스트로 구현하지 않을까?
+- 배열로 구현하는 경우: 
