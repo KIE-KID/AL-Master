@@ -50,8 +50,9 @@
 
 ## 2.Stack
 <p align="center">
-<img width="50%" src="https://user-images.githubusercontent.com/53163222/115954760-b6910200-a52d-11eb-8222-ad612c2ded7e.png">
+<img width="50%" src="https://user-images.githubusercontent.com/53163222/116805512-fd9c7a00-ab61-11eb-8c11-96e37b2942d2.png">
 </p>
+
 차곡차곡 쌓아 올린 형태의 자료구조
 후입선출(LIFO, Last-in First-out)
 시간 순서에 따라 자료가 쌓여서 가장 마지막에 삽입된 자료가 가장 먼저 삭제되는 구조  
@@ -87,7 +88,7 @@ DFS 구현 (depth first search) - 내가 현재 있는 위치에서 이동할 �
 
 ## 3. Queue
 <p align="center">
-<img width="50%" src="https://user-images.githubusercontent.com/53163222/115955246-65ced880-a530-11eb-9a8b-4458a07c2d2a.png ">
+<img width="50%" src="https://user-images.githubusercontent.com/53163222/116805527-14db6780-ab62-11eb-891d-db6f490c9012.png">
 </p>
 
 ### 특징
@@ -110,7 +111,9 @@ rear, front가 존재
 
 ## 3-1. Deque (데크)
 double-ended queue 의 줄임말로, 앞과 뒤에서 즉, 양방햐에서 데이터를 처리할 수 있는 queue형 자료구조를 의미한다.
-![img.png](img.png)
+<p align="center">
+<img width="50%" src="https://user-images.githubusercontent.com/53163222/116805516-00976a80-ab62-11eb-8bbf-accd184a6eed.png">
+</p>
 
 python의 collections에서 deque를 제공하고 있는데, 여기서 deque는 list와 일부 유사하다.
 자세한 메소드 활용 코드는 [여기](python/deque.py)에서 확인할 수 있다.
@@ -119,6 +122,9 @@ deque의 전체 메소드는 [여기](docs.python.org)에서 확인할 수 있�
 ## 3-2. Priority Queue (우선순위 큐)
 일반적으로 선입선출(FIFO)의 구조인 큐와 달리 들어간 순서에 상관없이 우선순위가 높은 데이터가 큐에서 먼저 나오는 자료구조를 말한다.
 힙(heap)이라는 자료구조로 구현할 수 있다.
+<p align="center">
+<img width="50%" src="">
+</p>
 
 Q. 왜 배열이나 연결리스트로 구현하지 않을까?
 - 배열로 구현하는 경우: 
