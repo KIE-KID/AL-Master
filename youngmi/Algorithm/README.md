@@ -38,5 +38,8 @@ but, 고차원적인 사고력을 요구하지는 않는 경우가 많아서 문
 
 # CHAPTER 5. DFS, BFS
 
-Depth First Search
-Breadth First Search
+1. DFS(Depth First Search) 깊이 우선 탐색
+정점의 자식들을 먼저 탐색하는 방식
+
+2. BFS(Breadth First Search) 너비 우선 탐색
+정점과 같은 레벨에 있는 노드들(형제 노드)을 먼저 탐색하는 방식
