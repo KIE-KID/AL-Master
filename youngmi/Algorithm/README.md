@@ -1,6 +1,9 @@
-# CHAPTER3. Greedy 
+# CHAPTER 3. Greedy 
 
 **그리디 알고리즘**: 탐욕법, 현재 상황에서 가장 좋아보이는 것만을 선택하는 알고리즘
+
+장점은 빠르다는 것이다.
+단점은 순간마다 최선의 선택을 하는 방법으로 항상 최적화 되지 않는다는 것이다. 최종 답이 최적이 아닐 가능성이 있다.
 
 <br>
 
@@ -12,23 +15,9 @@ ex) 가장 큰 순서대로, 가장 작은 순서대로 등,,,
 
 <br>
 
-### 예제
 
-- 거스름 돈 문제
+# CHAPTER 4. Implementation
 
-### 실전문제
-
-- 큰 수의 법칙
-- 숫자 카드 게임
-- 1이 될 때 까지
-
-<br>
-
-[코드업 그리디 문제집](https://www.codeup.kr/problemsetsol.php?psid=1) 
-
-[백준 그리디 문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=33)
-
-# CHAPTER4. Implementation
 보통 사소한 입력 조건 등을 문제에서 명시해주며 문제의 길이가 꽤 긴편이다. 
 but, 고차원적인 사고력을 요구하지는 않는 경우가 많아서 문법에 익숙하다면 오히려 쉽게 풀 수 있는 유형
 문자열을 처리하거나 큰 정수를 처리하는 문제가 출제되는 경우가 많은데 파이썬은 상대적으로 쉽게 해결할 수 있다.
@@ -47,15 +36,7 @@ but, 고차원적인 사고력을 요구하지는 않는 경우가 많아서 문
 
 <br>
 
-### 예제
+# CHAPTER 5. DFS, BFS
 
-- 상하좌우
-- 시각
-
-### 실전문제
-
-- 왕실의 나이트
-- 게임 개발
-<br>
-
-[백준 구현 문제집](https://www.acmicpc.net/problemset?sort=ac_desc&algo=102)
+Depth First Search
+Breadth First Search

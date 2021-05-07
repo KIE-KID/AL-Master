@@ -9,6 +9,7 @@
 
 2. re <br>
 정규식 연산, 텍스트 처리 서비스
+참고: https://url.kr/k6xl2v
 
 3. collections <br>
    컨테이너 데이터형
@@ -27,6 +28,8 @@
 - 이진 탐색(binary search)
     - bisect_left
     - bisect_right
+    참고:https://programming119.tistory.com/196
+
     
 6. math
 수학적 기능을 제공하는 라이브러리
