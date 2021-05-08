@@ -1,7 +1,7 @@
 <!--파이썬 문법-->
 <!--알아야 하는 문법, 자주 쓰이는 것, 헷갈리는 것, 기타 등등 기록용-->
 
-## 파이썬 문법
+## 코딩 테스트를 위한 파이썬 문법
 
 ### 수 자료형 
 
@@ -25,9 +25,7 @@ a = [] # 빈 리스트 선언2
 a = [0] * 10 # 모든 값이 0이고 크기가 10인 1차원 리스트 초기화
 ```
 
-
-
-### 리스트  컴프리헨션
+### List Comprehension
 
 리스트 초기화하는 방법 중 하나로, 대괄호([]) 안에 조건문과 반복문을 넣는 방식으로 초기화할 수 있다.
 
@@ -42,7 +40,6 @@ array = [i for i in range(20) if i % 2 == 1]
 array = [i*i for i in range(1,10)]
 # [1,4,9,16,25,36,49,64,81]
 ```
-
 
 
 - 좀 더 일반적인 소스코드
@@ -111,11 +108,25 @@ result = [i for i in a if i not in remove_set]
 #result = [1,2,4]
 ```
 
-
 int형 리스트 join
 ```python
 ' '.join(map(str,변수명))
 ```
 
+### Unpacking & Packing
+```python
+a, b = map(int, input().split())
+```
 
-<!--https://wikidocs.net/32 내장함수, itertool-->
+- unpacking
+```python
+_list = [1, 2, 3, 4, 5]
+print(*_list) # 1 2 3 4 5
+```
+
+- packing
+```python
+a, b, c = [1, 2, 3]
+d = a, b, c
+print(d) # (1, 2, 3)
+```
