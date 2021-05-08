@@ -40,7 +40,28 @@ array = [i for i in range(20) if i % 2 == 1]
 array = [i*i for i in range(1,10)]
 # [1,4,9,16,25,36,49,64,81]
 ```
+<!--# 1 ~ 10을 담는 리스트를 만들어봅시다.
+_list = [i for i in range(10)]
 
+# 2, 4, 6, ..., 20을 담는 리스트를 만들어봅시다.
+_list = [2 * i for i in range(10)]
+
+# 주어진 리스트를 받아 3의 배수만 담는 리스트를 만들어봅시다.
+tmp = [random.randrange(1, 200) for i in range(100)]
+_list = [i for i in tmp if i % 3 == 0]
+
+# 값이 두개 들어있는 튜플을 받아 리스트를 생성하되, 튜플 내부의 값을 뒤집어서 저장하세요.
+list_of_tupel = [(i, j) for i in range(100), for j in range(100, 0, -1)]
+_list = [(j, i) for i, j in list_of_tuple]
+
+# 주어진 리스트를 그대로 담되, 15가 넘어가는 값은 15로 바꿔서 저장합시다.
+_list = [i if i <= 15 else 15 for i in tmp]
+
+# 두 개의 리스트를 합치되, 가능한 모든 조합을 저장하는 리스트를 만들어봅시다.
+x = [i for i in range(5)]
+y = [i for i in range(5)]
+_list = [(i, j) for i in x, for j in y]
+특히 초보자 분들이 많이 헷갈리시는 것이 if의 쓰임새일거에요. 앞쪽에 붙는 if는 삼항 연산자의 if라고 생각하시면 되고, (즉, 값이 앞 조건을 만족하면 어떤 값, 만족하지 못하면 다른 값) 맨 끝에 붙는 if는 값을 넣을지, 뺄지 결정하는 조건이라고 생각하시면 됩니다.-->
 
 - 좀 더 일반적인 소스코드
 
@@ -130,3 +151,47 @@ a, b, c = [1, 2, 3]
 d = a, b, c
 print(d) # (1, 2, 3)
 ```
+
+Dictionary와 Set은 Hash Table 구조를 띄고 있다.
+그래서 삽입, 삭제, 탐색 연산의 시간복잡도가 O(1)이다.
+
+### Set
+
+요소의 중복값이 허용되지 않는다.
+
+```python
+i_want_to_erase_duplicate_element = [21, 31, 65, 21, 58, 94, 13, 31, 58]
+completed_list = list(set(i_want_to_erase_duplicate_element)) # 21, 31, 65, 58, 94, 13
+
+test_list = ['Test', 'test', 'TEST', 'tteesstt']
+converted_list = list(set(map(lambda string: string.lower(), test_list))) # test, tteesstt
+```
+
+### Dictionary
+
+딕셔너리는 키와 값이 쌍을 이루고 있다.
+dictionary를 생성할때는 **zip**을 사용할 수 있다.
+
+> 각 iterables의 요소들을 모으는 이터레이터를 만든다.
+```python
+fruit = ['apple', 'grape', 'orange', 'banana']
+price = [3200, 15200, 9800, 5000]
+
+_dict = dict(zip(fruit, price)) # {'apple' : 3200, 'grape' : 15200, 'orange' : 9000, 'banana' : 5000}
+```
+
+딕셔너리에서 값을 찾을 때, 없는 값을 찾는 경우
+if나 in을 사용하지 않고 출력하는 방법
+```python
+print(_dict['strawberry']) # Error!
+print(_dict.setdefault('strawberry', 0)) # 0
+```
+setdefault는 딕셔너리에 값이 있을 땐 해당 값을 리턴하고, 값이 없을 땐 두번째 인자로 넘겨준 값을 추가하고 추가한 값을 리턴한다.
+
+dictionary의 원소를 unpacking 할 때
+```python
+print(*_dict.keys()) # apple grape orange banana
+print(*_dict.values()) # 3200 15200 9800 5000
+print(*_dict.items()) # ('apple', 3200) ('grape', 15200) ('orange', 9800) ('banana', 5000)
+```
+
