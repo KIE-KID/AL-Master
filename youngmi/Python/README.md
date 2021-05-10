@@ -195,3 +195,48 @@ print(*_dict.values()) # 3200 15200 9800 5000
 print(*_dict.items()) # ('apple', 3200) ('grape', 15200) ('orange', 9800) ('banana', 5000)
 ```
 
+### Sorting
+
+`sort()`: 리스트를 내부 정렬하는 메소드
+`sorted()`:  컨테이너형 데이터를 받아 정렬된 리스트를 돌려주는 함수
+```python
+_list = [5, 6, 4, 8, 2, 3]
+sorted_list = sorted(_list) # 2, 3, 4, 5, 6, 8
+_list.sort()
+print(_list) # 2, 3, 4, 5, 6, 8
+
+_set = {65, 12, 15, 156, 31, 54, 94, 82, 31}
+_set.sort() # Error!!!!
+print(sorted(_set)) # 12, 15, 31, 54, 65, 82, 94, 156
+```
+
+내림차순 정렬
+```python
+_list = [5, 6, 4, 8, 2, 3]
+sorted_list = sorted(_list, reversed = True) # 8, 6, 5, 4, 3, 2
+```
+
+튜플의 첫번째 값을 기준으로 정렬
+```python
+_list = [(1, 3), (8, 2), (2, 5), (4, 7)]
+sorted_list = sorted(_list, key = lambda dt: dt[1]) # (8, 2), (1, 3), (2, 5), (4, 7)
+```
+key는 함수를 입력 받는다. 즉, lambda가 함수라는 것을 알 수 있다.
+정확히 말해서, lambda는 익명 함수라는 것으로, 함수의 이름을 명시하지 않고 일회성으로 사용하기 위해 정의하는 것이다. 여기서 dt는 함수에서 사용할 변수명으로, dt는 각각의 튜플을 저런식으로 사용하겠다는 것이다.
+
+튜플의 리스트를 첫번째 값으로 오름차순 정렬을 하는데 값이 같으면 두번째 값으로 내림차순 정렬하고 싶을 때
+```python
+_list = [(1, 3), (8, 2), (2, 5), (4, 7)]
+sorted_list = sorted(_list, key = lambda dt: (dt[1], -dt[0])) # (8, 2), (1, 3), (2, 5), (4, 7)
+```
+조건이 여러개인 경우 다음과 같이 튜플 형태로 묶어주는데, 음수가 되면 내림차순으로 정렬한다고 생각하면 됩니다. (사실은 각각의 값이 음수가 되면 대소관계가 반전되기 때문에, 음수로 변환해서 대소관계를 비교해서 정렬하는 것이다.)
+
+lambda를 사용하면 정말 다양한 방식으로 정렬을 할 수 있다.
+```python
+_list = ["CHicken", "hamburger", "Sushi", "chocolate"]
+
+print(sorted(_list)) # ['CHicken', 'Sushi', 'chocolate', 'hamburger']
+print(sorted(_list, key = lambda dt: dt.lower())) # ['CHicken', 'chocolate', 'hamburger', 'Sushi']
+```
+일반적으로 문자열은 대소관계를 비교하기 때문에, 다음과 같이 모두 소문자로 바꿔버리면 대소관계 상관 없이 정렬을 할 수 있다.
+
