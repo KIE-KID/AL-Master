@@ -239,4 +239,4 @@ print(sorted(_list)) # ['CHicken', 'Sushi', 'chocolate', 'hamburger']
 print(sorted(_list, key = lambda dt: dt.lower())) # ['CHicken', 'chocolate', 'hamburger', 'Sushi']
 ```
 일반적으로 문자열은 대소관계를 비교하기 때문에, 다음과 같이 모두 소문자로 바꿔버리면 대소관계 상관 없이 정렬을 할 수 있다.
-
+``
