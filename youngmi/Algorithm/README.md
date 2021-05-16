@@ -40,8 +40,8 @@ ex) 가장 큰 순서대로, 가장 작은 순서대로 등,,,
 
 # CHAPTER 5. DFS, BFS
 
-1. DFS(Depth First Search) 깊이 우선 탐색
+#### 1. DFS(Depth First Search) 깊이 우선 탐색
 정점의 자식들을 먼저 탐색하는 방식
 
-2. BFS(Breadth First Search) 너비 우선 탐색
+#### 2. BFS(Breadth First Search) 너비 우선 탐색
 정점과 같은 레벨에 있는 노드들(형제 노드)을 먼저 탐색하는 방식
