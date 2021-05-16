@@ -143,8 +143,19 @@
 
 - Stack / Queue / Deque 
 
-- Priority Queue / Heap
+- Tree 
 
+  - Binary Tree / Full Binary Tree / Complete Binary Tree
+  - Priority Queue / Heap
+
+- Search Tree 
+
+  - Binary Search Tree
+  - AVL Tree
+  - Red-Black Tree
+  - B tree
+  - B + tree
+    
 - HashSet / HashMap / HashTable / Dictionary
 
   - Hash Function
@@ -153,17 +164,7 @@
     - Separate Chaining
 
 - Resize
-
-- Tree 
-
-  - Binary Tree
-  - Full Binary Tree
-  - Complete Binary Tree
-  - BST (Binary Search Tree)
-  - Red-Black Tree
-  - B tree
-  - B + tree
-    
+  
 - Trie
 
 - Graph
