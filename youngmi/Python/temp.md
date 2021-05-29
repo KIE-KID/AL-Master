@@ -192,3 +192,5 @@ arr = [list(map(int, input().split())) for _ in range(n)]
 >> print(arr)
 [[1, 3, 3, 6, 7], [8, 13, 9, 12, 8], [4, 16, 11, 12, 6], [2, 4, 1, 23, 2], [9, 13, 4, 7, 3]]
 ```
+
+# https://johnyejin.tistory.com/62#recentComments
