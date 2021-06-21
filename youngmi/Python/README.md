@@ -60,28 +60,36 @@ int형 리스트 join
 ' '.join(map(str,변수명))
 ```
 
-### Unpacking & Packing
+### Packing & Unpacking
 ```python
 a, b = map(int, input().split())
 ```
 
-- unpacking
-```python
-_list = [1, 2, 3, 4, 5]
-print(*_list) # 1 2 3 4 5
-```
+#### packing
 
-- packing
+- 하나의 변수에 여러개의 값을 넣는 것
+
 ```python
 a, b, c = [1, 2, 3]
 d = a, b, c
 print(d) # (1, 2, 3)
 ```
 
-Dictionary와 Set은 Hash Table 구조를 띄고 있다.
+#### unpacking
+
+- 패킹되어있는 변수에서 여러 값을 꺼내오는 것
+
+```python
+_list = [1, 2, 3, 4, 5]
+print(*_list) # 1 2 3 4 5
+```
+
+
+### Set & Dictionary
+Set과 Dictionary는 Hash Table 구조를 띄고 있다.
 그래서 삽입, 삭제, 탐색 연산의 시간복잡도가 O(1)이다.
 
-### Set
+#### Set
 
 요소의 중복값이 허용되지 않는다.
 
@@ -93,7 +101,7 @@ test_list = ['Test', 'test', 'TEST', 'tteesstt']
 converted_list = list(set(map(lambda string: string.lower(), test_list))) # test, tteesstt
 ```
 
-### Dictionary
+#### Dictionary
 
 딕셔너리는 키와 값이 쌍을 이루고 있다.
 dictionary를 생성할때는 **zip**을 사용할 수 있다.
