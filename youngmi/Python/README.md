@@ -127,7 +127,7 @@ print(*_dict.items()) # ('apple', 3200) ('grape', 15200) ('orange', 9800) ('bana
 `sorted()`:  컨테이너형 데이터를 받아 정렬된 리스트를 돌려주는 함수
 ```python
 _list = [5, 6, 4, 8, 2, 3]
-sorted_list = sorted(_list) # 2, 3, 4, 5, 6, 8
+sorted_list = sorted(_list) #    2, 3, 4, 5, 6, 8
 _list.sort()
 print(_list) # 2, 3, 4, 5, 6, 8
 
