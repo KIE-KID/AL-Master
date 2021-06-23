@@ -117,3 +117,13 @@
   </tr>
 </tbody>
 </table>
+
+|                           | Best  |  Avg  | Worst | Stable | In-Place |
+| ------------------------- | :---: | :---: | :---: | :----: | :------: |
+| 삽입 정렬(Insertion Sort) |   N   |  N²   |  N²   |   O    |    O     |
+| 퀵 정렬(Quick Sort)       | NlogN | NlogN |  N²   |   X    |    O     |
+| 합병 정렬(Merge Sort)     | NlogN | NlogN | NlogN |   O    |    X     |
+| 힙 정렬(Heap Sort)        | NlogN | NlogN | NlogN |   X    |    O     |
+| 계수정렬(Counting Sort)   |   N   |   N   |   N   |   O    |    X     |
+| 기수 정렬 (Radix Sort)    |   N   |   N   |   N   |   O    |    X     |
+
