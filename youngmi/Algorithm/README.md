@@ -48,8 +48,71 @@
 
 연속된 데이터를 기준에 따라서 정렬하기 위한 알고리즘
 
-선택정렬
-삽입정렬
-합병정렬
-퀵정렬
-계수정렬
+1. 선택정렬
+2. 삽입정렬
+3. 합병정렬
+4. 퀵정렬
+5. 계수정렬
+
+<table style="text-align:center" class="tg">
+<thead>
+  <tr>
+    <th class="tg-kr4b"></th>
+    <th class="tg-acii">Best</th>
+    <th class="tg-acii">Avg</th>
+    <th class="tg-acii">Worst</th>
+    <th class="tg-acii">Stable</th>
+    <th class="tg-0pky">In-Place</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-acii">삽입 정렬(Insertion Sort)</td>
+    <td class="tg-acii">N</td>
+    <td class="tg-acii">N²</td>
+    <td class="tg-acii">N²</td>
+    <td class="tg-acii">O</td>
+    <td class="tg-0pky">O</td>
+  </tr>
+  <tr>
+    <td class="tg-dude">퀵 정렬(Quick Sort)</td>
+    <td class="tg-dude">NlogN</td>
+    <td class="tg-dude">NlogN</td>
+    <td class="tg-dude">N²</td>
+    <td class="tg-dude">X</td>
+    <td class="tg-0pky">O</td>
+  </tr>
+  <tr>
+    <td class="tg-acii">합병 정렬(Merge Sort)</td>
+    <td class="tg-acii">NlogN</td>
+    <td class="tg-acii">NlogN</td>
+    <td class="tg-acii">NlogN</td>
+    <td class="tg-acii">O</td>
+    <td class="tg-0pky">X</td>
+  </tr>
+  <tr>
+    <td class="tg-dude">힙 정렬(Heap Sort)</td>
+    <td class="tg-dude">NlogN</td>
+    <td class="tg-dude">NlogN</td>
+    <td class="tg-dude">NlogN</td>
+    <td class="tg-dude">X</td>
+    <td class="tg-0pky">O</td>
+  </tr>
+  <tr>
+    <td class="tg-acii">계수정렬(Counting Sort)</td>
+    <td class="tg-acii">N</td>
+    <td class="tg-acii">N</td>
+    <td class="tg-acii">N</td>
+    <td class="tg-acii">O</td>
+    <td class="tg-0pky">X</td>
+  </tr>
+  <tr>
+    <td class="tg-dude">기수 정렬 (Radix Sort)</td>
+    <td class="tg-dude">N</td>
+    <td class="tg-0pky">N</td>
+    <td class="tg-0pky">N</td>
+    <td class="tg-0pky">O</td>
+    <td class="tg-0pky">X</td>
+  </tr>
+</tbody>
+</table>
