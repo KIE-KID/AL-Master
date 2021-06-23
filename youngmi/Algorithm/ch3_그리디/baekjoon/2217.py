@@ -1,7 +1,5 @@
 '''
-2217
-로프
-
+2217번 로프
 '''
 import sys
 input = sys.stdin.readline # 즐 개수

@@ -4,8 +4,9 @@
 
 =어떤 상황에서 어떤 자료 구조가 가장 적합한지 파악하고 사용해야한다!
 
-## 1. Array (배열)
+# 1. Array / Linked List
 
+## 1) Array (배열)
 ### 특징
 
 - 인덱스-원소값( index,value )의 쌍으로 구성
@@ -45,60 +46,169 @@
 - 데이터 사이즈가 (거의) 바뀌지 않을 때
 - 데이터가 자주 삭제 되거나 추가되지 않을 때
 
+## 2) Linked List(연결 리스트)
 
-## 2.Stack
+
+
+
+
+
+
+<br>
+
+***스택과 큐는 리스트 자료구조의 특별한 경우이다.***
+
+# 2. Stack / Queue / Deque 
+
+## 2) Stack (스택)
 <p align="center">
-<img width="50%" src="https://user-images.githubusercontent.com/53163222/115954760-b6910200-a52d-11eb-8222-ad612c2ded7e.png">
+<img width="50%" src="https://user-images.githubusercontent.com/53163222/116805512-fd9c7a00-ab61-11eb-8c11-96e37b2942d2.png">
 </p>
-차곡차곡 쌓아 올린 형태의 자료구조
-후입선출(LIFO, Last-in First-out)
 
+차곡차곡 쌓아 올린 형태의 자료구조로 입구와 출구가 동일한 형태로 시각화 할 수 있다.
+후입선출(LIFO, Last-in First-out)
+시간 순서에 따라 자료가 쌓여서 가장 마지막에 삽입된 자료가 가장 먼저 삭제되는 구조  
+ 
 ### 특징
 - 같은 구조와 크기의 자료를 정해진 방향으로만 쌓을 수 있다.
-- top으로 정한 곳을 통해서만 접근할 수 있다.
 - top은 가장 위에 있는 최근에 들어온 자료를 가리키고 있다.
-- top을 통해서 자료를 삭제할 수 있다.
-- top을 통해 삽입하는 연산을 push
-- top을 통해 삭제하는 연산을 pop
-- 시간 순서에 따라 자료가 쌓여서 가장 마지막에 삽입된 자료가 가장 먼저 삭제되는 구조 = 
+- top으로 정한 곳을 통해서만 접근하고 연산할 수 있다.
 
-stack underflow: 비어있는 스택에서 원소를 추출하려고 할때 
-stack overflow: 스택이 넘치는 경우
+
+- push: top을 통해 데이터를 삽입하는 연산
+- pop: top을 통해 데이터를 삭제하는 연산
+  
+- stack underflow: 비어있는 스택에서 원소를 추출하려고 할때 
+- stack overflow: 스택이 넘치는 경우
+
+<br>
+*stack을 배열 또는 연결리스트 혹은 그 외의 것을 이용하여 구현할 수 있다.
+stack 자체는 정의이기 때문에 다양한 자료구조를 통해 구현 가능하다!*
 
 ### 시간 복잡도
 - 삽입 : O(1)
 - 삭제 : O(1)
 - 탐색 : O(N)
-### 장점
-### 단점
-### 사용
 
+### 사용
 웹 브라우저 방문기록 (뒤로 가기) : 가장 나중에 열린 페이지부터 다시 보여준다.
 역순 문자열 만들기 : 가장 나중에 입력된 문자부터 출력한다.
 실행 취소 (undo) : 가장 나중에 실행된 것부터 실행을 취소한다.
 후위 표기법 계산
 수식의 괄호 검사 (연산자 우선순위 표현을 위한 괄호 검사)
+DFS 구현 (depth first search) - 내가 현재 있는 위치에서 이동할 수 있는 위치를 stack에 모두 넣고 꺼내는 식으로 풀이 가능
 
-## 3. Queue
+
+## 2) Queue (큐)
 <p align="center">
-<img width="50%" src="https://user-images.githubusercontent.com/53163222/115955246-65ced880-a530-11eb-9a8b-4458a07c2d2a.png ">
+<img width="50%" src="https://user-images.githubusercontent.com/53163222/116805527-14db6780-ab62-11eb-891d-db6f490c9012.png">
 </p>
 
 ### 특징
 선입선출(FIFO, First-in First-out)
+입구와 출구가 모두 뚫려 있는 터널과 같은 형태로 시각화 할 수 있다.
+rear, front가 존재
+
 ### 시간 복잡도
 - 삽입 : O(1)
 - 삭제 : O(1)
 - 탐색 : O(N)
 
-### 장점
-### 단점
 ### 사용
-큐는 주로 데이터가 입력된 시간 순서대로 처리해야 할 필요가 있는 상황에 이용한다.
-
-우선순위가 같은 작업 예약 (프린터의 인쇄 대기열)
-은행 업무
-콜센터 고객 대기시간
+주로 데이터가 입력된 시간 순서대로 처리해야 할 필요가 있는 상황에 이용
+우선순위가 같은 작업 (프린터의 인쇄 대기열)
+은행 업무, 콜센터 업무
 프로세스 관리
-너비 우선 탐색(BFS, Breadth-First Search) 구현
+너비 우선 탐색(BFS, Breadth-First Search) 구현 - 내가 현재 있는 위치에서 이동할 수 있는 위치를 queue에 모두 넣고 꺼내는 식으로 풀이 가능
 캐시(Cache) 구현
+
+
+## 3) Deque (데크)
+double-ended queue 의 줄임말로, 앞과 뒤에서 즉, 양방햐에서 데이터를 처리할 수 있는 queue형 자료구조를 의미한다.
+<p align="center">
+<img width="50%" src="https://user-images.githubusercontent.com/53163222/116805516-00976a80-ab62-11eb-8bbf-accd184a6eed.png">
+</p>
+
+python의 collections에서 deque를 제공하고 있는데, 여기서 deque는 list와 일부 유사하다.
+자세한 메소드 활용 코드는 [여기](python/deque.py)에서 확인할 수 있다.
+deque의 전체 메소드는 [여기](docs.python.org)에서 확인할 수 있다.
+
+
+
+# 4. Tree / Binary Tree / Full Binary Tree / Complete Binary Tree
+
+트리를 거꾸로 세워 놓은 형태의 자료구조 이다. empty 이거나, empty 가 아니면 루트 R과 트리의 집합으로 구성되는 데 각 트리의 루트는 R의 자식노드이다. 단, 트리의 집합은 공집할일 수도 있다.
+
+**[용어]** <br>
+<table>
+<tr>
+    <td>Root Node | 루트 노드</td>
+    <td>트리의 최상위에 있는 노드</td>
+</tr>
+<tr>
+    <td>Parent Node | 부모 노드</td>
+    <td>노드 상위에 연결된 노드</td>
+</tr>
+<tr>
+    <td>Child Node | 자식 노드</td>
+    <td>노드 하위에 연결된 노드</td>
+</tr>
+<tr>
+    <td>Leaf Node | 이파리 노드</td>
+    <td>자식이 없는 노드</td>
+</tr>
+<tr>
+    <td>Sibling Node | 형제 노드</td>
+    <td>같은 부모 노드를 가지는 노드</td>
+</tr>
+<tr>
+    <td>Ancestor Node | 조상 노드</td>
+    <td>어떤 노드에서 루트까지의 상위 경로상에 있는 모든 노드들의 집합</td>
+</tr>
+<tr>
+    <td>Descendant Node | 후손 노드</td>
+    <td>노드 하위에 있는 모든 노드들의 집합</td>
+</tr>
+<tr>
+    <td>Subtree | 서브 트리</td>
+    <td>노드 자신과 후손 노드로 구성된 트리</td>
+</tr>
+<tr>
+    <td>Degree | 차수</td>
+    <td>자식 노드의 수</td>
+</tr>
+<tr>
+    <td>Depth, Level | 레벨, 깊이</td>
+    <td>루트부터 레벨 1, 아래 층으로 내려가면서 레벨이 1씩 증가</td>
+</tr><tr>
+    <td>Height | 높이</td>
+    <td>트리의 최대 레벨</td>
+</tr>
+<tr>
+    <td>Key | 키</td>
+    <td>탐색에 사용되는 노드에 저장된 정보</td>
+</tr>
+</table>
+
+  - Binary Tree / Full Binary Tree / Complete Binary Tree
+  - Priority Queue / Heap
+
+
+
+
+
+
+
+
+## 3-2. Priority Queue (우선순위 큐)
+일반적으로 선입선출(FIFO)의 구조인 큐와 달리 들어간 순서에 상관없이 우선순위가 높은 데이터가 큐에서 먼저 나오는 자료구조를 말한다.
+힙(heap)이라는 자료구조로 구현할 수 있다.
+<p align="center">
+<img width="50%" src="">
+</p>
+
+Q. 왜 배열이나 연결리스트로 구현하지 않을까?
+- 배열로 구현하는 경우:
+
+
+- Priority Queue / Heap
