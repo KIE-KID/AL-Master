@@ -338,18 +338,18 @@ c.f) '5' 인덱스의 값은 2이므로 '5'는 2번 등장했다. 그러므로 '
 <table style="border-collapse: collapse; width:50%; height:60px;">
 <tr>
 <td style="width:10%;background-color:#808080">0</td>
-<td style="width:10%;" bgcolor="#808080">1</td>
-<td style="width:10%;" bgcolor="#808080">2</td>
-<td style="width:10%;" bgcolor="#808080">3</td>
-<td style="width:10%;" bgcolor="#808080">4</td>
-<td style="width:10%;" bgcolor="#808080">5</td>
-<td style="width:10%;" bgcolor="#808080">6</td>
-<td style="width:10%;" bgcolor="#808080">7</td>
-<td style="width:10%;" bgcolor="#808080">8</td>
-<td style="width:10%;" bgcolor="#808080">9</td>
+<td style="width:10%;">1
+<td style="width:10%;">2</td>
+<td style="width:10%;">3</td>
+<td style="width:10%;">4</td>
+<td style="width:10%;">5</td>
+<td style="width:10%;">6</td>
+<td style="width:10%;">7</td>
+<td style="width:10%;">8</td>
+<td style="width:10%;">9</td>
 </tr>
 <tr>
-<td>2</td>
+<td style="width:10%;background-color:#808080">2</td>
 <td>2</td>
 <td>2</td>
 <td>1</td>
