@@ -337,30 +337,34 @@ c.f) 0 이상 100 이하인 성적 데이터를 정렬할 때
 c.f) '5' 인덱스의 값은 2이므로 '5'는 2번 등장했다. 그러므로 '5'를 2번 출력하면 된다.
 
 <table style="border-collapse: collapse; width:50%; height:60px;">
-<tr>
-<td style="width:10%;background-color:#808080">0</td>
-<td style="width:10%;">1
-<td style="width:10%;">2</td>
-<td style="width:10%;">3</td>
-<td style="width:10%;">4</td>
-<td style="width:10%;">5</td>
-<td style="width:10%;">6</td>
-<td style="width:10%;">7</td>
-<td style="width:10%;">8</td>
-<td style="width:10%;">9</td>
-</tr>
-<tr>
-<td style="width:10%;background-color:#808080">2</td>
-<td>2</td>
-<td>2</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-</tr>
+<thead>
+  <tr>
+	<th style="width:10%;background-color:#808080">0</th>
+    <th style="width:10%;">1</th>
+	<th style="width:10%;">2</th>
+	<th style="width:10%;">3</th>
+	<th style="width:10%;">4</th>
+	<th style="width:10%;">5</th>
+	<th style="width:10%;">6</th>
+	<th style="width:10%;">7</th>
+	<th style="width:10%;">8</th>
+	<th style="width:10%;">9</th>
+  </tr>
+</thead>
+<tbody>
+ <tr>
+  <td style="width:10%;background-color:#808080">2</td>
+  <td>2</td>
+  <td>2</td>
+  <td>1</td>
+  <td>1</td>
+  <td>2</td>
+  <td>1</td>
+  <td>1</td>
+  <td>1</td>
+  <td>2</td>
+ </tr>
+</tbody>
 </table>
 
 ### 시간 복잡도
