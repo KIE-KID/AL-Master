@@ -335,18 +335,18 @@ c.f) 0 이상 100 이하인 성적 데이터를 정렬할 때
 그 자체라고 할 수 있다. 정렬된 결과를 확인하려면 리스트의 첫 번째 데이터부터 하나씩 그 값만큼 인덱스를 출력하면 된다.
 c.f) '5' 인덱스의 값은 2이므로 '5'는 2번 등장했다. 그러므로 '5'를 2번 출력하면 된다.
 
-<table>
+<table style="border-collapse: collapse; width:50%; height:60px;" border="1">
 <tr>
-<td bgcolor="LightGray">0</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-<td>8</td>
-<td>9</td>
+<td style="width:10%;" bgcolor="#808080">0</td>
+<td style="width:10%;" bgcolor="#808080">1</td>
+<td style="width:10%;" bgcolor="#808080">2</td>
+<td style="width:10%;" bgcolor="#808080">3</td>
+<td style="width:10%;" bgcolor="#808080">4</td>
+<td style="width:10%;" bgcolor="#808080">5</td>
+<td style="width:10%;" bgcolor="#808080">6</td>
+<td style="width:10%;" bgcolor="#808080">7</td>
+<td style="width:10%;" bgcolor="#808080">8</td>
+<td style="width:10%;" bgcolor="#808080">9</td>
 </tr>
 <tr>
 <td>2</td>
