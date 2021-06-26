@@ -259,7 +259,7 @@ c.f) 데이터의 개수가 적을 때, 데이터 개수가 많더라도 데이�
 정렬되어 있을 때 매우 빠르게 동작하는 퀵 정렬과는 반대이다.)
 
 
-<big>***Big-O Notation: Best, Avg - O(NlogN) / Worst - O(N²)</big>
+<big>***Big-O Notation: Best, Avg - O(NlogN) / Worst - O(N²)***</big>
 
 
 ### Q. 라이브러리에서 제공하는 퀵 정렬은 O(NlogN)을 보장하는가?
