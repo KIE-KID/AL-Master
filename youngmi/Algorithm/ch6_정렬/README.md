@@ -335,7 +335,7 @@ c.f) 0 이상 100 이하인 성적 데이터를 정렬할 때
 그 자체라고 할 수 있다. 정렬된 결과를 확인하려면 리스트의 첫 번째 데이터부터 하나씩 그 값만큼 인덱스를 출력하면 된다.
 c.f) '5' 인덱스의 값은 2이므로 '5'는 2번 등장했다. 그러므로 '5'를 2번 출력하면 된다.
 
-<table style="border-collapse: collapse; width:50%; height:60px;" border="1">
+<table style="border-collapse: collapse; width:50%; height:60px;">
 <tr>
 <td style="width:10%;" bgcolor="#808080">0</td>
 <td style="width:10%;" bgcolor="#808080">1</td>
