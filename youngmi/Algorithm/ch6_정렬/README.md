@@ -337,7 +337,7 @@ c.f) '5' 인덱스의 값은 2이므로 '5'는 2번 등장했다. 그러므로 '
 
 <table style="border-collapse: collapse; width:50%; height:60px;">
 <tr>
-<td style="width:10%;" bgcolor="#808080">0</td>
+<td style="width:10%;background-color:#808080">0</td>
 <td style="width:10%;" bgcolor="#808080">1</td>
 <td style="width:10%;" bgcolor="#808080">2</td>
 <td style="width:10%;" bgcolor="#808080">3</td>
