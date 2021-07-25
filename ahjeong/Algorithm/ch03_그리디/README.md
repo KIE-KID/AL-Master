@@ -8,3 +8,13 @@
   - 숫자 카드 게임
   - 1이 될 때까지
 
+- 파이썬 문법 복습
+
+  - map()
+
+    : 리스트의 요소를 지정된 함수로 처리해주는 함수
+
+    - map(함수, 리스트) 또는 map(함수, 튜플)
+    - Ex) a = list(map(int, a)) : 리스트의 모든 요소를 int 로 반환
+    - ![](https://dojang.io/pluginfile.php/13699/mod_page/content/3/022019.png)
+
