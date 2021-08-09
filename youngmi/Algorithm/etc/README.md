@@ -15,5 +15,5 @@ recursive_function(1)
 
 <p>
 <img style="display:inline" width="80px" src="https://user-images.githubusercontent.com/53163222/128749035-d1343a1b-47ac-4d7a-81a7-978b208be346.png">
-<img style="display:inline" width="350px" src="https://user-images.githubusercontent.com/53163222/128750452-d453ad64-12d2-469c-afec-c023630012dc.png">
+<img style="display:inline" width="370px" src="https://user-images.githubusercontent.com/53163222/128750452-d453ad64-12d2-469c-afec-c023630012dc.png">
 </p>
