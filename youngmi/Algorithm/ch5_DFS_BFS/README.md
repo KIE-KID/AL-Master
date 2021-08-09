@@ -1,5 +1,10 @@
 # 그래프 탐색 알고리즘
 탐색(Search): 많은 양의 데이터 중에서 원하는 데이터를 찾는 과정
+대표적인 그래프 탐색 알고리즘으로 DFS와 BFS가 있다.
+
+[스택과 큐 설명](https://github.com/Youngmi-Park/AL-Master/tree/main/youngmi/DataStructure)
+
+[재귀함수 설명]()
 
 ## DFS(Depth First Search) 깊이 우선 탐색
 정점의 자식들을 먼저 탐색하는 방식<br>

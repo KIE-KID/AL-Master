@@ -37,10 +37,14 @@
 
 # CHAPTER 5. DFS, BFS
 
-#### 1. DFS(Depth First Search) 깊이 우선 탐색
+## 그래프 탐색 알고리즘
+탐색(Search): 많은 양의 데이터 중에서 원하는 데이터를 찾는 과정
+대표적인 그래프 탐색 알고리즘으로 DFS와 BFS가 있는데, 스택과 큐, 재귀함수의 개념을 잘 알고있어야한다.
+
+#### 1. DFS(Depth First Search) 깊이 우선 탐색 - 스택
 정점의 자식들을 먼저 탐색하는 방식
 
-#### 2. BFS(Breadth First Search) 너비 우선 탐색
+#### 2. BFS(Breadth First Search) 너비 우선 탐색 - 큐
 정점과 같은 레벨에 있는 노드들(형제 노드)을 먼저 탐색하는 방식
 <br>
 
