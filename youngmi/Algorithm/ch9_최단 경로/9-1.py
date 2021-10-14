@@ -3,7 +3,7 @@
 # 현재 값과 거쳐갈 때 값을 확인해서 갱신
 import sys
 
-input = sys.stdin.readline()
+input = sys.stdin.readline
 INF = int(1e9)  # 무한을 의미하는 10억 설정
 
 n, m = map(int, input().split())  # 노드 개수, 간선의 개수 입력받기
