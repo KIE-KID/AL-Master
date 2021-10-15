@@ -17,28 +17,9 @@ distance = [INF] * (n + 1)  # 최단 거리 테이블을 모두 무한으로 초
 # 간선 정보 입력 받기
 for i in range(m):
     a, b, c = map(int, input().split())  # a노드에서 b노드까지 비용c
-    graph[a].append((c, b))  # 9-1의 방식과 달리 반대로 넣어줌
+    graph[a].append((b, c))  # 9-1의 방식과 달리 반대로 넣어줌
 
-
-# 매 단계마다 우선순위 큐에서 노드를 꺼내서 해당노드까지의 거리를 확인 한 뒤
-# 그 노드를 거쳐가는(연결된) 각각의 경우도 모두 살펴본다.
 def dijkstra(start):
-    h = []
-    # 시작노드에 대해서 초기화, 거리 0, 방문 여부 True
-    distance[start] = 0
-    for j in graph[start]:  # 최소 힙에 노드와 거리
-        distance[j[1]] = j[0]
-        heapq.heappush(h, j)
-    for i in range(n - 1):
-        now = heapq.heappop(h)
-        for j in graph[now[1]]:
-            heapq.heappush(h, j)
-            cost = distance[now[1]] + j[0]
-            if cost < distance[j[1]]:
-                distance[j[1]] = cost
-
-
-def dijkstra2(start):
     q = []
     heapq.heappush(q, (0, start))  # 삽입, 삭제가 logN을 보장
     distance[start] = 0
