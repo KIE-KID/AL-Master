@@ -5,7 +5,7 @@ def bfs(graph, start, visited):
     # 큐 자료구조 구현을 위해 deque 라이브러리 사용
     queue = deque([start])
     # 현재 노드 방문 처리
-    visited[start] = True
+    visited[start] = True # 시작노드를 큐에 넣어줌
     # 큐가 빌때까지 반복
     while queue:
         # 큐에서 하나의 원소를 뽑아 출력하기

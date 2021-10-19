@@ -20,33 +20,36 @@ N x M 크기의 얼음틀에서 뚫려 있는 부분은 0 칸막이가 있는 �
 한 칸이 노드라고 생각했을 때, 그래프를 표현할 수 있다.
 노드가 0이면 상하좌우의 값을 확인하고 0인지 1인지 판단한 다음 0이라면 같은 작업을 반복하면된다.
 만일 1이라면 탐색을 멈추고 다음 노드로 넘어가면 된다.
-쉽게 말하면 0끼리 연결된 것들의 개수를 구하면 됨! dfs 호출 횟수
+쉽게 말하면 0끼리 연결된 것들의 개수를 구하면 됨! dfs 호출 횟수가 아이스크림의 개수
 
-dfs는 스택으로 구현한다. (python의 list를 자주 사용)
+dfs는 스택으로 구현한다. (python의 list를 사용)
 노드를 방문하면 스택에 넣었다가 자식노드 중에 방문안한 노드가 있으면 그중 하나를 또 스택에 넣는다.(없을 때까지 반복)
 자식노드들을 모두 방문하면 스택에서 제거
 재귀적 호출로 작업가능.
 '''
-n, m = map(int, input().split())
-graph = [list(map(int, input())) for _ in range(n)]
 
-# dfs 구현
-def dfs(x, y):  # graph, start, visited
-    if x <= -1 or x >= n or y <= -1 or y >= m:  # 일단 인덱스가 벗어나는지 확인
+n, m = map(int,input().split())
+graph = []
+for _ in range(n):
+    graph.append(list(map(int, input())))
+
+def dfs(x, y):
+    if x <= -1 or x >= n or y <= -1 or y >= m:
         return False
-    if graph[x][y] == 0:  # 아직 안채워진 부분
-        graph[x][y] = 1  # 해당 노드를 1로 값을 바꿔서 방문 처리함.
-        dfs(x - 1, y)  # 좌, 재귀적으로 dfs 호출
-        dfs(x, y - 1)  # 상, 재귀적으로 dfs 호출
-        dfs(x + 1, y)  # 우, 재귀적으로 dfs 호출
-        dfs(x, y + 1)  # 하, 재귀적으로 dfs 호출
+    if graph[x][y] == 0:
+        graph[x][y] = 1 # 방문처리
+        dfs(x-1, y)
+        dfs(x+1, y)
+        dfs(x, y-1)
+        dfs(x, y+1)
         return True
-    return False  # g[x][y] == 1인 부분은 dfs를 호출하지 않음으로 false를 반환
+    return False
 
-result = 0  # dfs 호출 횟수
+result = 0 # dfs 호출 횟수
 for i in range(n):
     for j in range(m):
-        if dfs(i, j):  # 현재위치에서 dfs 수행 ( == True)
-            result += 1  # True 를 반환하면 +1
+        if dfs(i, j) == True:
+            result += 1
 
 print(result)
+

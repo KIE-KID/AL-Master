@@ -33,27 +33,26 @@ bfs로 풀수 있다. bfs 구현은 큐로 한다. collections deque 사용
 from collections import deque
 
 n, m = map(int, input().split())  # 한줄에 띄어쓰기 없이 정수를 여러개 입력받았을 때는 .split()을 제외한다.
-graph = [list(map(int, input())) for _ in range(n)]
+graph = []
+for _ in range(n):
+    graph.append(list(map(int,input())))
 
-direction = [[-1, 0], [1, 0], [0, -1], [0, 1]]  # 상, 하, 좌, 우
+direction = [[-1, 0],[1, 0],[0, -1],[0, 1]]
 
-def bfs(x, y):
+def bfs(x,y):
     queue = deque()
     queue.append((x, y))
-
     while queue:
-        x, y = queue.popleft()  # 가장 앞에 있는 요소 pop (현재 위치)
-        # 현재 위치에서 상, 하, 좌, 우 모두 확인
-        for i in direction:
-            temp_x, temp_y = x + i[1], y + i[0]
-            if temp_x < 0 or temp_x >= n or temp_y < 0 or temp_y >= m:  # 범위를 벗어나면 무시
+        x, y = queue.popleft()
+        for i in range(4):
+            temp_x, temp_y = x+direction[i][0], y+direction[i][1]
+            if temp_x < 0 or temp_x >= n or temp_y < 0 or temp_y >= m:
                 continue
-            if graph[temp_x][temp_y] == 0:  # 벽인 경우 무시
+            if graph[temp_x][temp_y] == 0:
                 continue
-            if graph[temp_x][temp_y] == 1:  # 벽이 아니고, 처음 방문 하는 경우 최단 경로 표시
+            if graph[temp_x][temp_y] == 1:
                 graph[temp_x][temp_y] = graph[x][y] + 1
-                queue.append((temp_x, temp_y))
-    # 출구의 최단 거리 반환
-    return graph[n - 1][m - 1]
+                queue.append((temp_x,temp_y))
+    return graph[n-1][m-1]
 
-print(bfs(0, 0))
+print(bfs(0,0))
