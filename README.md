@@ -139,14 +139,23 @@
 
 # ✨ 자료구조
 
-- Array
+- Array / Linked list
 
-- Stack / Queue
+- Stack / Queue / Deque 
 
-- Deque / Priority Queue
+- Tree 
 
-- Linked list
+  - Binary Tree / Full Binary Tree / Complete Binary Tree
+  - Priority Queue / Heap
 
+- Search Tree 
+
+  - Binary Search Tree
+  - AVL Tree
+  - Red-Black Tree
+  - B tree
+  - B + tree
+    
 - HashSet / HashMap / HashTable / Dictionary
 
   - Hash Function
@@ -155,19 +164,7 @@
     - Separate Chaining
 
 - Resize
-
-- Tree 
-
-  - Binary Tree
-  - Full Binary Tree
-  - Complete Binary Tree
-  - BST (Binary Search Tree)
-  - Red-Black Tree
-  - B tree
-  - B + tree
-
-- Heap
-
+  
 - Trie
 
 - Graph
@@ -227,6 +224,6 @@
 
 [패스트 캠퍼스(Fast Campus) 알고리즘 강의 수강생들을 위한 나동빈 강사의 문제풀이 소스코드](https://github.com/ndb796/Fast_Campus_Algorithm_Lecture_Notes)
 
- [Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
+[Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
 
 [코딩 인터뷰 완전 분석 189가지 프로그래밍 문제와 해법, 프로그래밍인사이트, 게일 라크만 맥도웰 지음, 이창현 옮김, 인사이트, 2017년 08월 14일 출간](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788966263080&orderClick=LEa&Kc=)
