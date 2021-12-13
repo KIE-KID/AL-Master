@@ -30,8 +30,8 @@ else:
     count1 += 1
 
 for i in range(len(s) - 1):  # 한 자리씩 전부 확인
-    if s[i] != s[i + 1]:
-        if s[i + 1] == '1':
+    if s[i] != s[i + 1]: # 앞자리와 뒷자리가 숫자가 다른 경우
+        if s[i + 1] == '1': # 뒷자리가 1이면
             count0 += 1
         else:
             count1 += 1
